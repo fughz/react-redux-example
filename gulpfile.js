@@ -61,6 +61,7 @@ gulp.task("dev-server", function(callback) {
   var compiler = webpack(myConfig);
   browserSync({
     notify: false,
+    startPath: './index.html',
     server: {
       //baseDir: myConfig.output.publicPath,
       baseDir: "build",

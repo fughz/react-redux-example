@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { Card, CardHeader, CardText } from 'material-ui/Card';
 
 export default class About extends Component {
   render() {

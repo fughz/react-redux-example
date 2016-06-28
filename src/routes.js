@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Route, IndexRoute, Redirect, Link } from 'react-router'
+import { Route, IndexRedirect, Redirect, Link } from 'react-router'
 
 import Header from './containers/header'
 import App from './containers/app';
@@ -21,11 +21,10 @@ export default connect(
 
 const routes = (
   <Route path="/" component={Header}>
-    {/*<DefaultRoute component={Sider} />*/}
-    <IndexRoute component={App} />
+    <IndexRedirect to="/home" />
+    <Route path="home" component={App} />
     <Route path="about" component={About} />
     <Route path="*" component={PageNotFound} />
-    <Redirect from="home" to="/" />
   </Route>
 )
 
