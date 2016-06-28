@@ -7,7 +7,6 @@ import Comment from './comment'
 export default class CommentList extends Component {
   rawMarkup(text) {
     let rawMarkup = marked(text.toString(), {sanitize: true});
-    //return rawMarkup;
     return (
       <span dangerouslySetInnerHTML={{__html: rawMarkup}} />
     );
