@@ -2,7 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import Divider from 'material-ui/Divider';
 import Subheader from 'material-ui/Subheader';
 import {List, ListItem} from 'material-ui/List';
-import Comment from './comment'
 
 export default class CommentList extends Component {
   rawMarkup(text) {
